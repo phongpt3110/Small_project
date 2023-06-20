@@ -1,0 +1,272 @@
+/* Reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Common */
+:root{
+    --primary--color: #009688;
+    --primary--text: #757575;
+}
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+}
+body {
+    background-color: #f1f1f1;
+}
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-third {
+    width: 25%;
+}
+.col-nine {
+    width: 75%;
+}
+.col-full {
+    width: 100%;
+}
+.padding-lr-16 {
+    padding: 0.1em 16px !important;
+}
+.padding-lr-8 {
+    padding: 0 8px !important;
+}
+.padding-top-8 {
+    padding-top: 8px !important;
+}
+.margin-top-16 {
+    margin-top: 16px !important;
+}
+.margin-bottom-16 {
+    margin-bottom: 16px !important;
+}
+.margin-tb-16 {
+    margin: 16px 0 !important;
+}
+.margin-right-16 {
+    margin-right: 16px !important;
+}
+.margin-tb-10 {
+    margin: 10px 0 !important;
+}
+hr {
+    border: 0;
+    margin: 20px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+.light-grey {
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 
+    0 4px 20px 0 rgba(0,0,0,0.19);
+}
+/* Main */
+
+infor {
+
+}
+.infor-items {
+
+}
+.infor-myseft {
+    position: relative;
+    text-shadow: 0 2px 2px #fff;
+}
+.infor-myseft-img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+.infor-myseft-name {
+    font-size: 2.6rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+}
+.container-infor {
+    background-color: #fff;
+    padding: 2px 0;
+}
+.infor-myseft-list {
+    list-style-type: none;
+    margin: 0;
+}
+.infor-myseft-item {
+    line-height: 1.6rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--primary--text);
+}
+.infor-myseft-item-icon {
+    color: var(--primary--color);
+}
+/* Skill */
+.skill-head {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 2.2rem;
+    color: var(--primary--text);
+}
+.skill-title-icon {
+    color: var(--primary--color);
+}
+.skill-list {
+    display: block;
+}
+.name-skill {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    font-weight: 400;
+    color: var(--primary--text);
+}
+.range-skill {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    color: #000;
+    background-color: #f1f1f1;
+    border-radius: 16px;
+}
+.range-child {
+    line-height: 2.5rem;
+    color:#fff;
+    background-color: var(--primary--color);
+    text-align: center;
+    border-radius: 16px;
+}
+.infor-language:last-child {
+    margin-bottom: 32px;
+}
+.language-name {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+    color: var(--primary--text);
+}
+
+/* WORK EPERICENCE */
+.work {
+    background-color: #fff;
+}
+.work-header {
+    display: flex;
+    display: -webkit-flex;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 3rem;
+    color: var(--primary--color);
+    padding: 16px 0;
+}
+.work-icon {
+
+}
+.work-name {
+    color: var(--primary--text);
+}
+.workspace {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+.workspace > p {
+    font-weight: 300;
+    text-align: justify;
+}
+.workspace .btn {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 3rem;
+    padding: 0 8px;
+    color: #fff;
+    background-color: var(--primary--color);
+    border-radius: 4px;
+    outline: none;
+    border: none;
+}
+.workspace-name {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 3.6rem;
+    opacity: 0.6;
+    margin: 10px 0;
+}
+
+.time-leanr {
+    color: var(--primary--color);
+    line-height: 3.6rem;
+}
+
+/* EDUCATION  */
+.education {
+    background-color: #fff;
+}
+.education-learn {
+
+}
+.education-header {
+    display: flex;
+    display: -webkit-flex;
+    font-size: 2.6rem;
+    line-height: 2.6rem;
+    color: var(--primary--color);
+    padding: 16px 0;
+
+}
+.education-header-name {
+    color: var(--primary--text);
+    font-weight: 400;
+}
+.education-learn-name {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 3.6rem;
+    color: var(--primary--text);
+}
+.education-leanr-time {
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+    color: var(--primary--color);
+}
+.education-learn > p {
+    font-size: 1.8rem;
+    line-height: 2rem;
+}
+
+/* FOOTER */
+footer {
+    font-size: 2rem;
+    line-height: 3.6rem;
+    text-align: center;
+    background-color: var(--primary--color);
+    color: #fff;
+    margin-top: 10px;
+}
+footer > div > i:hover {
+    opacity: 0.8;
+}
+footer > p > a {
+    color: #fff;
+}
